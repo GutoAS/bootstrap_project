@@ -505,6 +505,78 @@
 
     <!--******************** contact form ***********************-->
 
+    <div id="contact">
+      <div class="contact-lg">
+        <div class="text-center">
+          <h2>Get in Touch</h2>
+          <p class="lead">
+            Questions to ask? Fill out the form to contact me directly....
+          </p>
+        </div>
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            <form action="https://formspree.io/f/xlevybzg" method="post">
+              <label for="email" class="form-label">Email adress</label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-envelope-fill"></i>
+                </span>
+                <input
+                  name="email"
+                  required
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="e.g. agostinhosoberano@example.com"
+                />
+              </div>
+              <label for="name" class="form-label">Name: </label>
+              <div class="input-group mb-4">
+                <span class="input-group-text">
+                  <i class="bi bi-person-fill"></i>
+                </span>
+                <input
+                  required
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="full-name"
+                  placeholder="e.g. Agostinho"
+                />
+              </div>
+              <label for="subject" class="form-label"
+                >What is your question about?</label
+              >
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-chat-right-dots-fill text-secondary"></i>
+                </span>
+                <select class="form-select" id="subject">
+                  <option value="pricing" selected>Pricing query</option>
+                  <option value="content">Content query</option>
+                  <option value="other">Other query</option>
+                </select>
+              </div>
+              <div class="mb-4 mt-5 form-floating">
+                <textarea
+                  required
+                  class="form-control"
+                  id="query"
+                  style="height: 140px"
+                  placeholder="query"
+                  name="message"
+                ></textarea>
+                <label for="query">Your query...</label>
+              </div>
+              <div class="mb-4 text-center">
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--************************* get updates / modal trigger ***********************-->
 
     <script
