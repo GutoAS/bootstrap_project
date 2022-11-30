@@ -11,6 +11,17 @@ $custom-theme-colors: (
   "altdark": #522192,
 );
 
+//tooltip
+.custom-tooltip {
+text-decoration: none;
+font-weight: 400;
+color: white;
+background: #000;
+opacity: 0.3;
+border-radius: 30px;
+};
+
+
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

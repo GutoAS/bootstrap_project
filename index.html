@@ -1,4 +1,5 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,8 +80,10 @@
         <div class="row g-4 justify-content-center align-items-center">
           <div class="col-md-5 text-center text-md-start">
             <h1 data-aos="fade-right">
-              <div class="display-2">Black-Belt</div>
-              <div class="display-5 text-muted">Your Coding Skills</div>
+              <span class="display-2 d-block">Black-Belt</span>
+              <span class="display-5 text-muted d-block"
+                >Your Coding Skills</span
+              >
             </h1>
             <p class="lead my-4 text-muted">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -108,6 +111,7 @@
               class="tt"
               data-bs-placement="bottom"
               title="Net Ninja Book Cover"
+              data-bs-custom-class="custom-tooltip"
             >
               <picture>
                 <source
@@ -553,6 +557,7 @@
                 <span class="input-group-text">
                   <span
                     class="tt"
+                    data-bs-custom-class="custom-tooltip"
                     data-bs-placement="bottom"
                     title="Enter an email address we can reply to."
                     ><i class="bi bi-question-circle text-muted"></i
@@ -575,6 +580,7 @@
                 <!-- tooltip -->
                 <span class="input-group-text">
                   <span
+                    data-bs-custom-class="custom-tooltip"
                     class="tt"
                     data-bs-placement="bottom"
                     title="Pretty self explanatory really..."
@@ -696,7 +702,7 @@
       </div>
     </div>
 
-    <!-- side panel / offcanvas -->
+    <!--******************** side panel / offcanvas  ***************-->
 
     <div
       class="offcanvas offcanvas-start"
@@ -749,6 +755,7 @@
     </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
       const tooltips = document.querySelectorAll(".tt");
       tooltips.forEach((t) => {
