@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/main.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Net Ninja Pro - the Book</title>
     <style>
       section {
@@ -70,7 +70,7 @@
       <div class="container-lg">
         <div class="row g-4 justify-content-center align-items-center">
           <div class="col-md-5 text-center text-md-start">
-            <h1>
+            <h1 data-aos="fade-right">
               <div class="display-2">Black-Belt</div>
               <div class="display-5 text-muted">Your Coding Skills</div>
             </h1>
@@ -90,7 +90,10 @@
               Explore my other books
             </a>
           </div>
-          <div class="col-md-5 text-center d-none d-md-block">
+          <div
+            class="col-md-5 text-center d-none d-md-block"
+            data-aos="fade-left"
+          >
             <!-- tooltip -->
 
             <span
@@ -129,7 +132,7 @@
         </div>
 
         <div class="row my-5 align-items-center justify-content-center">
-          <div class="col-8 col-lg-4 ol-xl-3">
+          <div class="col-8 col-lg-4 ol-xl-3" data-aos="flip-left">
             <div class="card border-0">
               <div class="card-body text-center py-4">
                 <h4 class="card-title">Starter Edition</h4>
@@ -145,7 +148,7 @@
             </div>
           </div>
 
-          <div class="col-9 col-lg-4">
+          <div class="col-9 col-lg-4" data-aos="zoom-in">
             <div class="card border-primary border-2">
               <div class="card-header text-center text-primary">
                 Most Popular
@@ -166,7 +169,7 @@
             </div>
           </div>
 
-          <div class="col-8 col-lg-4 col-xl-3">
+          <div class="col-8 col-lg-4 col-xl-3" data-aos="flip-right">
             <div class="card border-0">
               <div class="card-body text-center py-4">
                 <h4 class="card-title">Ultimate Edition</h4>
@@ -199,7 +202,7 @@
         </div>
 
         <div class="row my-5 g-5 justify-content-around align-items-center">
-          <div class="col-6 col-lg-4">
+          <div class="col-6 col-lg-4" data-aos="fade-right">
             <picture>
               <source
                 type="image/webp"
@@ -608,7 +611,9 @@
     <section class="bg-light">
       <div class="container">
         <div class="text-center">
-          <h2>Stay in The Loop</h2>
+          <h2 data-aos="fade-up" data-aos-anchor="top-bottom">
+            Stay in The Loop
+          </h2>
           <p class="lead">Get the latest updates as they happen...</p>
         </div>
         <div class="row justify-content-center">
@@ -741,6 +746,10 @@
       tooltips.forEach((t) => {
         new bootstrap.Tooltip(t);
       });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
